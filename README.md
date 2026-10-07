@@ -1,60 +1,61 @@
-# Regressão Linear com PIB e Índice ABCR
+# CP02 - Regressão Linear com PIB e Índice ABCR
 
-Nome completo    RM
-Augusto de Souza Avila    570839
-Davi Simoncelo    571738
-João Pedro Sousa    573962
-Matheus Evangelista    568593
-Murilo Lima de Carvalho    570156
+## Integrantes
 
-Este trabalho analisa a relação entre a atividade econômica brasileira e o fluxo de veículos nas rodovias.
+| Nome completo | RM |
+|---|---|
+| Augusto de Souza Avila | 570839 |
+| Davi Simoncelo | 571738 |
+| João Pedro Sousa | 573962 |
+| Matheus Evangelista | 568593 |
+| Murilo Lima de Carvalho | 570156 |
 
-Foram utilizados dados de 2006 a 2025.
+## Objetivo
 
-## Fontes
+Analisar a relação entre a atividade econômica brasileira e o fluxo de veículos nas rodovias utilizando dados do PIB e do Índice ABCR entre 2006 e 2025.
 
-- IBGE - Tabela 1620 do SIDRA
-- ABCR - Índice ABCR
+## Dados
 
-Para o PIB, foi utilizado o índice de volume do PIB a preços de mercado, sem ajuste sazonal.
+Foram utilizadas as seguintes bases:
 
-Para o Índice ABCR, foi utilizada a série original do fluxo total de veículos no Brasil.
+- `PIB_IBGE_SIDRA_FINAL.csv` - Índice de volume do PIB a preços de mercado, obtido no IBGE.
+- `ABRC_FINAL.csv` - Índice ABCR de fluxo total de veículos no Brasil.
 
-## Preparação dos dados
+Os dados utilizados são séries sem ajuste sazonal.
 
-Os dados do PIB são trimestrais, por isso foi calculada a média dos quatro trimestres de cada ano.
+## Preparação
 
-Os dados da ABCR são mensais, então foi calculada a média dos doze meses de cada ano.
+Como os dados do PIB são trimestrais, foi calculada a média dos quatro trimestres de cada ano.
 
-A base final ficou com as colunas:
+Os dados do Índice ABCR são mensais, então foi calculada a média dos doze meses de cada ano.
 
-- Ano
-- PIB_indice
-- ABCR_indice
+A base utilizada na análise possui:
+
+- `Ano`
+- `PIB_indice`
+- `ABCR_indice`
 
 ## Análise
 
-Foi feito um gráfico de dispersão entre o índice do PIB e o Índice ABCR e calculada a correlação entre os dois indicadores.
+Foi criado um gráfico de dispersão entre o índice do PIB e o Índice ABCR e calculada a correlação entre os dois indicadores.
 
-Depois foi treinado um modelo de regressão linear utilizando:
+Para a regressão linear foram utilizados:
 
-- PIB_indice como entrada
-- ABCR_indice como valor a ser estimado
-- 2006 a 2021 para treino
-- 2022 a 2025 para teste
+- Entrada: `PIB_indice`
+- Valor estimado: `ABCR_indice`
+- Treino: 2006 a 2021
+- Teste: 2022 a 2025
 
-Os dados foram mantidos em ordem cronológica.
+Os registros foram mantidos em ordem cronológica.
 
 ## Avaliação
 
 O modelo foi avaliado utilizando MAE, MSE e R².
 
-Também foi feita uma comparação entre os valores reais e os valores previstos pelo modelo.
+Também foi realizada a comparação entre os valores observados e os valores previstos para os quatro anos de teste.
 
 ## Conclusão
 
-Os resultados mostraram uma relação positiva entre o índice do PIB e o Índice ABCR.
+A análise permite observar a relação entre o índice de volume do PIB e o fluxo de veículos nas rodovias. A correlação indica o grau de relação entre os indicadores e as métricas permitem avaliar o desempenho da regressão linear.
 
-A correlação encontrada foi alta, mas isso não significa que exista uma relação direta de causa e efeito entre os dois indicadores.
-
-O modelo apresentou desempenho moderado nos dados de teste, mostrando que o PIB ajuda a explicar o comportamento do fluxo de veículos, mas outros fatores também podem influenciar o Índice ABCR.
+Uma correlação alta não representa, por si só, uma relação de causa e efeito.
