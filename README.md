@@ -59,3 +59,9 @@ Também foi realizada a comparação entre os valores observados e os valores pr
 A análise permite observar a relação entre o índice de volume do PIB e o fluxo de veículos nas rodovias. A correlação indica o grau de relação entre os indicadores e as métricas permitem avaliar o desempenho da regressão linear.
 
 Uma correlação alta não representa, por si só, uma relação de causa e efeito.
+
+## Fontes
+
+IBGE - Sistema IBGE de Recuperação Automática (SIDRA), Tabela 1620: https://sidra.ibge.gov.br/tabela/1620
+
+ABCR - Índice ABCR: https://melhoresrodovias.org.br/indice-abcr_2/
