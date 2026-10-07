@@ -1,5 +1,12 @@
 # Regressão Linear com PIB e Índice ABCR
 
+Nome completo    RM
+Augusto de Souza Avila    570839
+Davi Simoncelo    571738
+João Pedro Sousa    573962
+Matheus Evangelista    568593
+Murilo Lima de Carvalho    570156
+
 Este trabalho analisa a relação entre a atividade econômica brasileira e o fluxo de veículos nas rodovias.
 
 Foram utilizados dados de 2006 a 2025.
