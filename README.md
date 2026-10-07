@@ -6,8 +6,8 @@ Foram utilizados dados de 2006 a 2025.
 
 ## Fontes
 
--IBGE - Tabela 1620 do SIDRA
--ABCR - Índice ABCR
+- IBGE - Tabela 1620 do SIDRA
+- ABCR - Índice ABCR
 
 Para o PIB, foi utilizado o índice de volume do PIB a preços de mercado, sem ajuste sazonal.
 
@@ -21,9 +21,9 @@ Os dados da ABCR são mensais, então foi calculada a média dos doze meses de c
 
 A base final ficou com as colunas:
 
--Ano
--PIB_indice
--ABCR_indice
+- Ano
+- PIB_indice
+- ABCR_indice
 
 ## Análise
 
@@ -31,10 +31,10 @@ Foi feito um gráfico de dispersão entre o índice do PIB e o Índice ABCR e ca
 
 Depois foi treinado um modelo de regressão linear utilizando:
 
--PIB_indice como entrada
--ABCR_indice como valor a ser estimado
--2006 a 2021 para treino
--2022 a 2025 para teste
+- PIB_indice como entrada
+- ABCR_indice como valor a ser estimado
+- 2006 a 2021 para treino
+- 2022 a 2025 para teste
 
 Os dados foram mantidos em ordem cronológica.
 
